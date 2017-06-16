@@ -23,6 +23,11 @@ set(LLVM_LINK_COMPONENTS
 set(LLVM_NO_DEAD_STRIP 1)
 
 add_llvm_tool(opt
+  CpuRename.cpp
+  DirectFuncCall.cpp
+  EraseNonkernel.cpp
+  TileUniform.cpp
+  WrapperGen.cpp
   AnalysisWrappers.cpp
   BreakpointPrinter.cpp
   GraphPrinters.cpp
